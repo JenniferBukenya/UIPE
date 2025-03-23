@@ -1,0 +1,249 @@
+html {
+    font-size: 16px !important; 
+}
+
+.uipe-header {
+    background: url('../img/backgrounnd.png') no-repeat;
+    /* background-color: #8888ee; */
+    height: 874px;
+    background-position: top;
+    background-size: 2000px 874px;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    position: relative !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.25rem !important;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #2151A6 !important;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #000000;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+}
+
+.uipe-btn-outline-primary {
+    color: #2151A6 !important;
+    border: 1px solid #2151A6 !important;
+}
+
+.uipe-btn-primary {
+    background-color: #2151A6 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.pt-93 {
+    padding-top: 93px;
+}
+
+.banner__title {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 62.93px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+.banner__subtitle {
+    width: 477px;
+    height: 57px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+.banner .banner__title span {
+    color: #2151A6;
+  }
+/* .events__cards{
+    justify-content: flex-start;
+    display: inline;
+}
+.events__cards .card{
+    width:400px;
+    height:auto;
+} */
+/* .uipe-events-card {
+    background-color: #F7FAFC !important;
+    padding: 65px 28px 55px 28px;
+} */
+
+.uipe-events-card .date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 120px;
+    height: 34px;
+    background-color: #C2EAFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+.uipe-events-card .date img {
+    width: 24px;
+    height: 24px;
+  }
+  
+.uipe-events-card .date text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+  }
+  
+/* .uipe-events-card .title {
+    width: 294px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+  }
+  
+.uipe-events-card .content {
+    height: 43px;
+    width: 356px;
+    color: #02020A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 26px;
+  } */
+  
+.uipe-events-card .uipe-location {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: 201px;
+    height: 34px;
+    margin-top: 26px;
+  }
+  
+.uipe-events-card .uipe-location img {
+    height: 30px;
+    width: 30px;
+  }
+  
+.uipe-events-card .uipe-location .text {
+    width: 161px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #02020A;
+    text-wrap: wrap;
+  }
+  
+.uipe-events-card .uipe-rsvp {
+    margin-top: 58px;
+  }
+  
+.uipe-events-card .uipe-rsvp button {
+    width: 106px;
+    height: 32px;
+    border-radius: 5px;
+    color: white;
+    background-color: #2151A6;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+  }
+
+.uipe-events-viewall {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+  }
+  
+.uipe-events-viewall .uipe-events-viewall-btn {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.uipe-news-card .meta {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #797474;
+}
+
+.uipe-join {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 19px;
+    color: #9EA3AE;
+  }
+  
+.uipe-join span {
+    color: #2151A6;
+  }
+
+.uipe-footer {
+    background: #02020A;
+    color: white;
+}
