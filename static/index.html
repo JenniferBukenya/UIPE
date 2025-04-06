@@ -5,25 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UIPE - Empowering Innovation</title>
+    <link rel="stylesheet" href="css/custom.css">
+
     <link rel="stylesheet" href="https://ams3.digitaloceanspaces.com/uipe-data/static/css/uipe.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/main.css"> -->
 </head>
 
 <body>
     <div class="header">
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">
+                    <!-- <img src="img/logo.png" width="78" height="84" alt="UIPE Logo"> -->
+                    <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/logo.png" alt="UIPE Logo">
 
-        <nav class="navbar">
+                </a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/logo.png" width="78"
+                                height="84" alt="UIPE Logo">
+                        </a>
+                        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="/projects">Innovations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="/news">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="/events">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="/resources">Resources</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="" class="btn btn-outline-primary uipe-btn-outline-primary">Login</a>
+                            <a href="" class="btn btn-primary uipe-btn-primary">Register</a>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- <nav class="navbar">
             <div class="nav__menu">
                 <div class="logo">
                     <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/logo.png" alt="UIPE Logo">
                 </div>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/projects/">Innovations</a></li>
-                    <li><a href="/news/">News</a></li>
-                    <li><a href="/events/">Events</a></li>
-                    <li><a href="/resources/">Resources</a></li>
-                </ul>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link mx-lg-2 active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link mx-lg-2" href="/projects/">Innovations</a></li>
+                        <li class="nav-item"><a class="nav-link mx-lg-2" href="/news/">News</a></li>
+                        <li class="nav-item"><a class="nav-link mx-lg-2" href="/events/">Events</a></li>
+                        <li class="nav-item"><a class="nav-link mx-lg-2" href="/resources/">Resources</a></li>
+                    </ul>
+                </div>
             </div>
 
 
@@ -32,7 +88,7 @@
                 <a href="/signup/"><button class="_btn btn-auth btn__primary_opaque">Register</button></a>
             </div>
 
-        </nav>
+        </nav> -->
 
         <script>
             function menuToggle() {
@@ -53,82 +109,170 @@
             </div>
         </div>
     </div>
-    <div class="events">
-        <div class="events__viewall">
-            <button class="events__viewall-btn">View all</button>
+    <!-- -------------------------------EVENTS SECTION---------------- -->
+    <div class="container-fluid uipe-events" style="position: relative;">
+        <div class="uipe-events-viewall">
+            <button class="uipe-events-viewall-btn">View all</button>
         </div>
-        <div class="events__title">
-            <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/events.png" alt="events">
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <!-- <img src="img/events.png" width="383" height="116" alt="events"> -->
+                <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/events.png" alt="events">
+
+            </div>
         </div>
-        <div class="events__cards">
-
-            <div class="card">
-                <div class="date" style="padding-left: 1em; padding-right: 1em;">
-                    <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Calendar.png" alt="calendar">
-                    <div class="text">17 Dec, 2024</div>
-                </div>
-                <div class="title">
-                    Innovation and Intellectual Property Management Bootcamp
-                </div>
-                <div class="content">
-                    The Residential Bootcamp will cover the following…
-                </div>
-                <div class="location">
-                    <div><img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Location.png"
-                            alt="location"></div>
-                    <div class="text">Esella Country Hotel, Kira</div>
-                </div>
-                <div class="rsvp">
-                    <a href="/event/2/"><button class="register">RSVP here</button></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="date" style="padding-left: 1em; padding-right: 1em;">
-                    <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Calendar.png" alt="calendar">
-                    <div class="text">29 Oct, 2024</div>
-                </div>
-                <div class="title">
-                    Sensitization Workshop on Innovation and Intellectual Property Management
-                </div>
-                <div class="content">
-                    This training will cover topics including Basics …
-                </div>
-                <div class="location">
-                    <div><img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Location.png"
-                            alt="location"></div>
-                    <div class="text">Gulu University</div>
-                </div>
-                <div class="rsvp">
-                    <a href="/event/3/"><button class="register">RSVP here</button></a>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card uipe-events-card">
+                    <div class="date">
+                        <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Calendar.png" alt="calendar">
+                        <!-- <img src="img/Calendar.png" alt="calendar"> -->
+                        <div class="text">12 Dec</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Innovation and intellectual Management Bootcamp</h5>
+                        <p class="card-text">Join us for an exclusive moment to discuss innovatoion</p>
+                        <div class="uipe-location">
+                            <div><img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Location.png"
+                                    alt="location"></div>
+                            <div class="text">Esella Country Club Hotel, Kira</div>
+                        </div>
+                        <div class="uipe-rsvp">
+                            <button class="btn btn-primary uipe-btn-primary">RSVP here</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="date" style="padding-left: 1em; padding-right: 1em;">
-                    <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Calendar.png" alt="calendar">
-                    <div class="text">11 Sep, 2024</div>
-                </div>
-                <div class="title">
-                    Business Development Training for Innovators
-                </div>
-                <div class="content">
-                    This training will cover Product Design and Devel…
-                </div>
-                <div class="location">
-                    <div><img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Location.png"
-                            alt="location"></div>
-                    <div class="text">Eureka Place Hotel, Ntinda</div>
-                </div>
-                <div class="rsvp">
-                    <a href="/event/1/"><button class="register">RSVP here</button></a>
+            <div class="col-lg-4">
+                <div class="card uipe-events-card">
+                    <div class="date">
+                        <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Calendar.png" alt="calendar">
+                        <!-- <img src="img/Calendar.png" alt="calendar"> -->
+                        <div class="text">12 Dec</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Innovation and intellectual Management Bootcamp</h5>
+                        <p class="card-text">Join us for an exclusive moment to discuss innovatoion</p>
+                        <div class="uipe-location">
+                            <div><img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Location.png"
+                                    alt="location"></div>
+                            <div class="text">Esella Country Club Hotel, Kira</div>
+                        </div>
+                        <div class="uipe-rsvp">
+                            <button class="btn btn-primary uipe-btn-primary">RSVP here</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
+            <div class="col-lg-4">
+                <div class="card uipe-events-card">
+                    <div class="date">
+                        <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Calendar.png" alt="calendar">
+                        <!-- <img src="img/Calendar.png" alt="calendar"> -->
+                        <div class="text">12 Dec</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Innovation and intellectual Management Bootcamp</h5>
+                        <p class="card-text">Join us for an exclusive moment to discuss innovatoion</p>
+                        <div class="uipe-location">
+                            <div><img src="img/Location.png" alt="location"></div>
+                            <div class="text">Esella Country Club Hotel, Kira</div>
+                        </div>
+                        <div class="uipe-rsvp">
+                            <button class="btn btn-primary uipe-btn-primary">RSVP here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="news">
+    <!-- <div class="container-fluid uipe-events" style="position: relative;">
+        <div class="uipe-events-viewall">
+            <button class="uipe-events-viewall-btn">View all</button>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/events.png" alt="events">
+            </div>
+        </div>
+        <div class="row events_card">
+            <div class="col-lg-4">
+                <div class="card uipe-events-card">
+                    <div class="date">
+                        <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Calendar.png" alt="calendar">
+                        <div class="text">17 Dec</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Innovation and intellectual Management Bootcamp</h5>
+                        <p class="card-text">Join us for an exclusive moment to discuss innovatoion</p>
+                        <div class="uipe-location">
+                            <div><img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Location.png"
+                                    alt="location"></div>
+                            <div class="text">Esella Country Club Hotel, Kira</div>
+                        </div>
+                        <div class="uipe-rsvp">
+                            <button class="btn btn-primary uipe-btn-primary">RSVP here</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card uipe-events-card">
+                    <div class="date">
+                        <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Calendar.png" alt="calendar">
+                        <div class="text">29 Oct</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            Sensitization Workshop on Innovation and Intellectual Property Management
+                        </div>
+                        <div class="card-text">
+                            This training will cover topics including Basics …
+                        </div>
+                        <div class="uipe-location">
+                            <div><img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Location.png"
+                                    alt="location"></div>
+                            <div class="text">Gulu University</div>
+                        </div>
+                        <div class="uipe-rsvp">
+                            <button class="btn btn-primary uipe-btn-primary">RSVP here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card uipe-events-card">
+                    <div class="date">
+                        <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Calendar.png" alt="calendar">
+                        <div class="text">11 Sep</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            Business Development Training for Innovators
+                        </div>
+                        <div class="card-text">
+                            This training will cover Product Design and Devel…
+                        </div>
+                        <div class="uipe-location">
+                            <div><img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/Location.png"
+                                    alt="location"></div>
+                            <div class="text">Eureka Place Hotel, Ntinda</div>
+                        </div>
+                        <div class="rsvp">
+                            <button class="btn btn-primary uipe-btn-primary">RSVP here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div> -->
+
+
+    <!-- -------------------NEWS SECTION------------------------ -->
+    <!-- <div class="news">
         <div class="news__title">
             <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/news.png" alt="news">
         </div>
@@ -149,7 +293,7 @@
                             Under…
                     </div>
                     <a href="/news/uipe-develops-a-research-innovation-and-intellectual-property-management-policy">Read
-                            this post</a>
+                        this post</a>
                 </div>
                 <div class="meta">
                     Posted 1 month, 3 weeks ago
@@ -200,7 +344,81 @@
             </div>
 
         </div>
+    </div> -->
+    <!-- --------------NEWS----------- -->
+    <div class="container-fluid uipe-news" style="position: relative;">
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <!-- <img src="img/news.png" width="288" height="116" alt="news"> -->
+                <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/news.png" alt="news">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <!-- <img src="img/vr.png" class="card-img-top" alt="vr"> -->
+                    <img src="https://ams3.digitaloceanspaces.com/uipe-data/media/uploads/PHOTO-2024-06-24-20-56-29.jpg"
+                        alt="vr">
+                    <div class="card-body uipe-news-card">
+                        <h5 class="card-title">UIPE develops a Research, Innovation and Intellectual Property Management
+                            Policy</h5>
+                        <p class="card-text">
+                            The Uganda Institution of Professional Engineers is developing a Research, Innovation and
+                            Intellectual Property Management Policy to spur research and innovation among its members.
+                        </p>
+                        <!-- <a href="/news/uipe-develops-a-research-innovation-and-intellectual-property-management-policy"><button>Read
+                            this post</button></a> -->
+                        <button type="button" class="btn btn-link">Read this post</button>
+                        <div class="meta">
+                            Posted 2 days ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <!-- <img src="img/vr.png" class="card-img-top" alt="vr"> -->
+                    <img src="https://ams3.digitaloceanspaces.com/uipe-data/media/uploads/PHOTO-2024-09-13-14-48-27.jpg"
+                        alt="vr">
+                    <div class="card-body uipe-news-card">
+                        <h5 class="card-title">UIPE develops a Research, Innovation and Intellectual Property Management
+                            Policy</h5>
+                        <p class="card-text">
+                            The Uganda Institution of Professional Engineers is developing a Research, Innovation and
+                            Intellectual Property Management Policy to spur research and innovation among its members.
+                        </p>
+                        <button type="button" class="btn btn-link">Read this post</button>
+                        <div class="meta">
+                            Posted 2 days ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <!-- <img src="img/vr.png" class="card-img-top" alt="vr"> -->
+                    <img src="https://ams3.digitaloceanspaces.com/uipe-data/media/uploads/PHOTO-2024-10-22-11-06-21.jpg"
+                        alt="vr">
+                    <div class="card-body uipe-news-card">
+                        <h5 class="card-title">UIPE develops a Research, Innovation and Intellectual Property Management
+                            Policy</h5>
+                        <p class="card-text">
+                            The Uganda Institution of Professional Engineers is developing a Research, Innovation and
+                            Intellectual Property Management Policy to spur research and innovation among its members.
+                        </p>
+                        <button type="button" class="btn btn-link">Read this post</button>
+                        <div class="meta">
+                            Posted 2 days ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <!-- -------------------CONTACT SECTION------------------------ -->
     <div class="contact">
         <div class="contact__title">
             <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/contact.png" alt="contact">
@@ -213,6 +431,8 @@
         </div>
     </div>
 
+    <!-- -------------------FOOTER SECTION------------------------ -->
+    
     <footer class="footer">
         <div class="footer__left">
             <img src="https://ams3.digitaloceanspaces.com/uipe-data/static/img/logo.png" alt="UIPE Logo">
