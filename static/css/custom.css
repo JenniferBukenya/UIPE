@@ -90,6 +90,11 @@ html {
 .banner .banner__title span {
     color: #2151A6;
   }
+
+.banner__btns .btn__primary_transparent {
+    background-color: transparent;
+  }
+  
 /* .events__cards{
     justify-content: flex-start;
     display: inline;
@@ -102,6 +107,11 @@ html {
     background-color: #F7FAFC !important;
     padding: 65px 28px 55px 28px;
 } */
+
+.uipe-events-card {
+  background-color: #F7FAFC !important;
+  padding: 65px 28px 55px 28px;
+  }
 
 .uipe-events-card .date {
     position: absolute;
