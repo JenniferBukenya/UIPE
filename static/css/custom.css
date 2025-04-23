@@ -57,10 +57,22 @@ html {
     border: 1px solid #2151A6 !important;
 }
 
+.uipe-btn-outline-primary:hover {
+  color: white !important;
+  border: 1px solid white !important;
+  background-color: #2151A6 !important;
+}
+
 .uipe-btn-primary {
     background-color: #2151A6 !important;
     color: white !important;
     border: none !important;
+}
+
+.uipe-btn-primary:hover {
+  background-color: transparent !important;
+  color: #2151A6 !important;
+  border: 1px solid #2151A6 !important;
 }
 
 .pt-93 {
@@ -94,7 +106,7 @@ html {
 .banner__btns .btn__primary_transparent {
     background-color: transparent;
   }
-  
+
 /* .events__cards{
     justify-content: flex-start;
     display: inline;
@@ -256,4 +268,116 @@ html {
 .uipe-footer {
     background: #02020A;
     color: white;
+}
+
+.uipe-news{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.content{
+  position: relative;
+  display:flex;
+  width:100%;
+}
+
+.row{
+  width: 75%;
+  position: relative;
+  padding-right: 30px;
+}
+
+.row .col-lg-4{
+  width:100%;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.row .col-lg-4 .card{
+  border: none;
+  position: relative;
+  display: flex;
+}
+
+.row .col-lg-4 .card .img-holder {
+  flex: 1;
+}
+
+.row .col-lg-4 .card .img-holder .heading{
+  position: absolute;
+  padding:10px;
+  background-color: rgba(255,255,255,0.7);
+  width:100%;
+  height: 55px;
+}
+
+.row .col-lg-4 .card .img-holder .heading h5{
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.row .col-lg-4 .card .img-holder img{
+  border-radius: 10px;
+  width: 100%;
+}
+
+.row .col-lg-4 .card .uipe-news-card{
+  width: 100%;
+}
+
+.row .col-lg-4 .card .uipe-news-card .meta{
+  width: 100%;
+  text-align: end;
+}
+
+.row .col-lg-4 .card .uipe-news-card .card-text{
+  width: 100%;
+  text-align: justify;
+  padding-top: 25px;
+}
+
+.column{
+  width: 25%;
+  background-color: #bee9ff;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.column .lil-header{
+  width: 100%;
+  padding: 7px;
+}
+
+.column .lil-header h5 {
+  text-align: center;
+  font-size: medium;
+}
+
+.column > div {
+  width:100%;
+}
+
+.column > div .card{
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  padding-bottom: 25px;
+}
+.column > div .card img{
+  border-radius: 10px;
+}
+
+.column > div .card .uipe-news-card{
+  border-radius: 10px;
+  background-color: white;
 }
