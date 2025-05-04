@@ -141,9 +141,11 @@ html {
 .uipe-events-card .date img {
     width: 24px;
     height: 24px;
+    object-fit: contain;
   }
   
-.uipe-events-card .date text {
+.uipe-events-card .date .text {
+  width:100%;
     font-size: 16px;
     font-weight: 500;
     line-height: 19.36px;
@@ -289,13 +291,13 @@ html {
 }
 
 .row{
-  width: 75%;
+  width: 100%;
   position: relative;
   padding-right: 30px;
+  display: flex;
 }
 
 .row .col-lg-4{
-  width:100%;
   flex-grow: 1;
   border-radius: 10px;
 }
@@ -329,9 +331,15 @@ html {
   width: 100%;
 }
 
+.row .col-lg-4 .card img{
+  border-radius: 10px;
+  width: 100%;
+}
+
 .row .col-lg-4 .card .uipe-news-card{
   width: 100%;
   position: relative;
+  border-radius: 10px;
 }
 
 .row .col-lg-4 .card .uipe-news-card .gray{
@@ -594,4 +602,8 @@ article .align-items-center .post-meta .post-date{
 .uipe-events .justify-content-center{
   width: 100%;
   justify-content: center;
+}
+
+.row .col-lg-4 .card .uipe-news-card .btn-link{
+  list-style: none;
 }
