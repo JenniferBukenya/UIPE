@@ -607,3 +607,350 @@ article .align-items-center .post-meta .post-date{
 .row .col-lg-4 .card .uipe-news-card .btn-link{
   list-style: none;
 }
+
+/* Responsive styles for multiple screen sizes */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .banner__title {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .banner__subtitle {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .banner__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .banner__btns ._btn {
+    width: 100%;
+  }
+  .uipe-events-card {
+    padding: 30px 15px 25px 15px;
+  }
+  .uipe-events-card .date {
+    width: 90px;
+    height: 28px;
+    font-size: 14px;
+  }
+  .uipe-events-card .uipe-location {
+    width: 100%;
+    font-size: 12px;
+  }
+  .uipe-events-card .uipe-rsvp button {
+    width: 100%;
+    font-size: 14px;
+  }
+  .uipe-news .row {
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .row .col-lg-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .post-img img, .card img {
+    width: 100%;
+    height: auto;
+  }
+  .card-body.uipe-news-card {
+    padding: 15px;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 0 15px;
+  }
+ 
+  .column {
+    width: 100% !important;
+  }
+
+  .newslist-page .justify-content-center .col-3 {
+    width: 100%;
+    align-items: center;
+  }
+  
+  .content > div:first-child {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .newslist-page .container > .row > .col-lg-8 .col-lg-6{
+    width: 100% !important;
+    display: flex;
+  }
+ 
+  .newslist-page .container > .row > .col-lg-4.sidebar {
+    width: 100% !important;
+    padding: 0px;
+  }
+
+  .newslist-page .container > .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    align-items:center;
+    padding: 0%;
+  }
+  .newslist-page .container > .row > .col-lg-4.sidebar .widgets-container{
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner__title {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .banner__subtitle {
+    width: 90%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .banner__btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+  .banner__btns ._btn {
+    width: auto;
+  }
+  .uipe-events-card {
+    padding: 40px 20px 35px 20px;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .uipe-events-card .date {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .uipe-events-card .uipe-location {
+    width: 90%;
+    font-size: 13px;
+  }
+  .uipe-events-card .uipe-rsvp button {
+    width: auto;
+    font-size: 15px;
+  }
+  .uipe-news .row {
+    flex-wrap: wrap;
+  }
+  .row .col-lg-4 {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 0 20px;
+  }
+  /* Fix layout for news_about main and sidebar on small to medium screens */
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .content > div:first-child {
+    width: 66.67%;
+    padding: 0;
+    margin: 0;
+  }
+  .content > .column {
+    width: 33.33%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Newslist page layout */
+.newslist-page .container {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  max-width: 100% !important;
+}
+
+.newslist-page .row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.newslist-page .container > .row > .col-lg-8 {
+  width: 66.67% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.newslist-page .container > .row > .col-lg-4.sidebar {
+  width: 33.33% !important;
+  padding: 0 15px !important;
+  margin: 0 !important;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner__title {
+    font-size: 44px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .banner__subtitle {
+    width: 80%;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .banner__btns {
+    justify-content: center;
+    gap: 20px;
+  }
+  .uipe-events-card {
+    padding: 50px 25px 40px 25px;
+  }
+  .uipe-events-card .date {
+    width: 110px;
+    height: 32px;
+    font-size: 16px;
+  }
+  .uipe-events-card .uipe-location {
+    width: 80%;
+    font-size: 14px;
+  }
+  .uipe-events-card .uipe-rsvp button {
+    font-size: 16px;
+  }
+  .uipe-news .row {
+    flex-wrap: wrap;
+  }
+  .row .col-lg-4 {
+    width: 31%;
+    margin-bottom: 20px;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 0 25px;
+  }
+  /* Fix layout for news_about main and sidebar on medium screens */
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .content > div:first-child {
+    width: 66.67%;
+    padding: 0;
+    margin: 0;
+  }
+  .content > .column {
+    width: 33.33%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .banner__title {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+  }
+  .banner__subtitle {
+    width: 70%;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .banner__btns {
+    justify-content: flex-start;
+    gap: 25px;
+  }
+  .uipe-events-card {
+    padding: 60px 30px 50px 30px;
+  }
+  .uipe-events-card .date {
+    width: 120px;
+    height: 34px;
+    font-size: 16px;
+  }
+  .uipe-events-card .uipe-location {
+    width: 70%;
+    font-size: 14px;
+  }
+  .uipe-events-card .uipe-rsvp button {
+    font-size: 16px;
+  }
+  .uipe-news .row {
+    flex-wrap: nowrap;
+  }
+  .row .col-lg-4 {
+    width: 32%;
+    margin-bottom: 0;
+  }
+  .sidebar {
+    width: 30%;
+    padding: 0 30px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .banner__title {
+    font-size: 52px;
+    line-height: 62.93px;
+    text-align: left;
+  }
+  .banner__subtitle {
+    width: 477px;
+    font-size: 18px;
+    line-height: 21.78px;
+    text-align: left;
+  }
+  .banner__btns {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .uipe-events-card {
+    padding: 65px 28px 55px 28px;
+  }
+  .uipe-events-card .date {
+    width: 120px;
+    height: 34px;
+    font-size: 16px;
+  }
+  .uipe-events-card .uipe-location {
+    width: 201px;
+    font-size: 14px;
+  }
+  .uipe-events-card .uipe-rsvp button {
+    font-size: 16px;
+  }
+  .uipe-news .row {
+    flex-wrap: nowrap;
+  }
+  .row .col-lg-4 {
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .sidebar {
+    width: 30%;
+    padding: 0 30px;
+  }
+}
