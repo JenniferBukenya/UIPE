@@ -635,9 +635,15 @@ article .align-items-center .post-meta .post-date{
     padding: 30px 15px 25px 15px;
   }
   .index-page .uipe-events-card .date {
-    width: 90px;
-    height: 28px;
+    width: 100px;
+    height: 40px;
     font-size: 14px;
+    padding: 5px;
+  }
+  .index-page .uipe-events-card .date img{
+    object-fit: contain;
+    width:50px;
+    height:30px;
   }
   .index-page .uipe-events-card .uipe-location {
     width: 100%;
@@ -710,7 +716,7 @@ article .align-items-center .post-meta .post-date{
   }
   .uipe-events-card .date {
     width: 100px;
-    height: 30px;
+    height: 40px;
     font-size: 15px;
   }
   .uipe-events-card .uipe-location {
